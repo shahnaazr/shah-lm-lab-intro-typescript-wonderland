@@ -19,14 +19,16 @@ type Table = {
 };
 
 function setTheTable(): Table {
-  return {
-    seats: [
-      { drink: { type: DRINKS[1], poured: true } },
-      { drink: { type: DRINKS[1], poured: true } },
-      { drink: { type: DRINKS[1], poured: true } },
-      { drink: { type: DRINKS[1], poured: true } },
-    ],
-  };
+  const table: Table = { seats: [] };
+  for (let i = 0; i < 4; i++) {
+    table.seats.push({
+      drink: {
+        type: "Tea",
+        poured: true,
+      },
+    });
+  }
+  return table;
 }
 
 export function attendATeaParty() {

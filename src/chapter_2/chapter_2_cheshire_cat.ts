@@ -21,7 +21,7 @@ export function meetTheCheshireCat(): void {
 
   const theCat = new CheshireCat();
 
-  theCat.expression = EXPRESSIONS[2];
+  theCat.expression = "😁 Grin 😁";
 
   print(
     `You can see ${theCat.name}. A wide ${theCat.expression} is hovering in the air.`
